@@ -5,6 +5,8 @@ package main
 
 import "fmt"
 
-func main () {
-	// Here goes your code
+func main() {
+	fmt.Println("name: Spoitler")
+	fmt.Println("address: Montpellier")
+	fmt.Println("comments: some comments")
 }

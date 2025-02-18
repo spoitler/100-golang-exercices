@@ -9,7 +9,12 @@ package main
 
 import "fmt"
 
-func main () {
-	// Here goes your code
-	fmt.Printf("...")
+func main() {
+	var name, surname string
+	fmt.Println("What's your name and surname ? enter it separated by a space")
+	_, err := fmt.Scan(&name, &surname)
+	if err != nil {
+		panic(err)
+	}
+	fmt.Printf("you'r name is %v and surname is %v\n", name, surname)
 }

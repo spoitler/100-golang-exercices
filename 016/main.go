@@ -3,10 +3,14 @@
 
 package main
 
-import "fmt"
-import "os"
+import (
+	"errors"
+	"fmt"
+	"os"
+)
 
-func main () {
-	// Here goes your code
-	
+func main() {
+	if _, err := os.Stat("test.txt"); errors.Is(err, os.ErrNotExist) {
+		fmt.Println("test.txt does not exist")
+	}
 }

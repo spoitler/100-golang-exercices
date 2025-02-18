@@ -3,9 +3,9 @@
 
 package main
 
-import "fmt"
+func main() {
+	ints := [10]int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	_ = ints
 
-func main () {
-	// Here goes your code
-	fmt.Printf("...")
+	// over engineering it with a loop is a loss of energy, and create more CPU operation than creating it manually. 10 it's ok to create it manually
 }

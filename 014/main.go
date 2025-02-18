@@ -10,10 +10,19 @@ package main
 
 import "fmt"
 
-func main () {
+func main() {
 	fmt.Println("Give me a number")
 	var number int
-	fmt.Scanln(&number)
+	_, err := fmt.Scanln(&number)
+	if err != nil {
+		panic(err)
+	}
 	// Here goes your code
-	
+	if number > 30 {
+		fmt.Println("so hot")
+	} else if number < 30 && number > 20 {
+		fmt.Println("perfect")
+	} else {
+		fmt.Println("so cold")
+	}
 }

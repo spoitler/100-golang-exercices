@@ -6,8 +6,9 @@ package main
 
 import "fmt"
 
-func main () {
-	// Here goes your code
+func main() {
 	var string1 string
-	// ...
+	string1 = "hello world"
+	fmt.Println(string1[0])
+	fmt.Println(string(string1[0]))
 }
